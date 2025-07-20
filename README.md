@@ -8,9 +8,9 @@ The image it generates matches the tape; I've been using this to test a program 
 the goal to not waste paper tape during development to catch silly programming errors.
 
 To use the tool, just have your raw Facit punch data in a file, and invoke the application with that file
-as the single argument, e.g.
+as the single argument. To view the example testpat.bin file, use:
 
-    ./punchtape yourdata.bin
+    ./punchtape testpat.bin
 
 Here's a screenshot of the application displaying the "testpat.bin" file:
 ![screenshot](https://github.com/erco77/facit-n4000-punch-simulator/blob/master/screenshot.png)
@@ -30,5 +30,7 @@ Written and tested on Linux, but the same Makefile should work for mac os.
 For windows, not so much; a separate Makefile would be needed to build for Visual Studio or mingw/msys.
 
 ## Keyboard/Mouse
-There's a scrollbar at the bottom of the tape that lets you scroll left/right with the mouse to view long tapes.
-Also the left/right arrow keys can be used to scroll through the tape.
+- The scrollbar at the bottom of the tape lets you scroll left/right with the mouse to view long tapes
+- Left/Right arrow keys can be used to scroll through the tape
+- Ctrl(-) and Ctrl(+) zooms the window scale; Ctrl(-) is useful to shrink the window 50% to view large tapes more easily
+- Hitting ESC closes the application
