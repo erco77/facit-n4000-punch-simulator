@@ -182,7 +182,7 @@ int main(int argc, char *argv[]) {
     int tapeheight = (HOLE_SIZE*8)+(HOLE_SPACING*8) + 20;       // tape height (including margins)
 
     // Create gui, assign raw buffer to Facit class simulator
-    Fl_Double_Window win(800,tapeheight+SLIDER_HEIGHT,"Facit N4000 Punch Simulator");
+    Fl_Double_Window win(1200,tapeheight+SLIDER_HEIGHT,"Facit N4000 Punch Simulator");
     FacitCanvas facit(0,0,win.w(),tapeheight);
     facit.SetData(size, buf, tapewidth);		// assign raw data to facit simulator
     Fl_Slider slider(0,facit.h(),win.w(),SLIDER_HEIGHT);
